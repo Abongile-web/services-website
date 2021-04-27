@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+//Navigation section
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  height: 5vh;
+
+  .logo {
+  }
+
+  ul {
+    display: flex;
+    li {
+      padding: 0 10px;
+      list-style: none;
+    }
+  }
+}
