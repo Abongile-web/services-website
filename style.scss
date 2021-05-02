@@ -96,10 +96,10 @@ html {
 //services section
 
 .services {
+  color: rgb(31, 31, 31);
   h1 {
     text-align: center;
     font-size: 60px;
-    color: rgb(31, 31, 31);
     padding: 40px;
   }
 
@@ -115,12 +115,62 @@ html {
       height: 300px;
       width: 300px;
       h2 {
-        color: rgb(31, 31, 31);
         font-size: 28px;
         padding: 20px;
       }
       svg {
         width: 300px;
+      }
+    }
+  }
+}
+
+//projects section
+
+.projects {
+  // background-color: rgb(249, 249, 249);
+  margin-top: 40px;
+  color: rgb(31, 31, 31);
+
+  h1 {
+    text-align: center;
+    font-size: 60px;
+    padding: 40px;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .projects-cards {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 400px;
+      min-height: 400px;
+      text-align: center;
+      background-color: white;
+      h3 {
+        padding: 10px;
+      }
+      p {
+        padding-bottom: 10px;
+      }
+      img {
+        width: 400px;
+      }
+
+      .view {
+        padding: 20px;
+        a {
+          color: rgb(31, 31, 31);
+        }
+        i {
+          padding: 0 5px;
+          font-size: 20px;
+        }
       }
     }
   }
