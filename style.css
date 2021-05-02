@@ -113,4 +113,50 @@ html {
 .hero-1 img {
   width: 600px;
 }
+
+.services h1 {
+  text-align: center;
+  font-size: 60px;
+  color: #1f1f1f;
+  padding: 40px;
+}
+
+.services .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services .cards .services-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 300px;
+  width: 300px;
+}
+
+.services .cards .services-cards h2 {
+  color: #1f1f1f;
+  font-size: 28px;
+  padding: 20px;
+}
+
+.services .cards .services-cards svg {
+  width: 300px;
+}
 /*# sourceMappingURL=style.css.map */
