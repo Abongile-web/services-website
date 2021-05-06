@@ -14,7 +14,7 @@ html {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .navigation {
@@ -29,7 +29,7 @@ html {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0 10px;
+  padding: 5px 10px;
   height: 8vh;
   z-index: 99;
   position: -webkit-sticky;
@@ -47,8 +47,12 @@ html {
   display: flex;
 }
 
+.navigation ul .active {
+  text-decoration: underline;
+}
+
 .navigation ul li {
-  padding: 0 40px;
+  padding: 0 20px;
   list-style: none;
 }
 
@@ -56,22 +60,28 @@ html {
   color: white;
   font-size: 22px;
   text-decoration: none;
+  -webkit-transition-duration: 267ms;
+          transition-duration: 267ms;
 }
 
 .navigation ul li a:hover {
-  color: #e8e8e8;
+  color: #e3e3e3;
+  text-decoration: underline;
 }
 
 .hero-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   min-height: 92vh;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 40px;
 }
 
 .hero-1 .content {
@@ -82,7 +92,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 35%;
+  width: 700px;
 }
 
 .hero-1 .content h1 {
@@ -111,7 +121,8 @@ html {
 }
 
 .hero-1 img {
-  width: 600px;
+  width: 500px;
+  margin: 40px 0;
 }
 
 .services {
@@ -128,6 +139,8 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -167,6 +180,7 @@ html {
   margin-top: 40px;
   color: #1f1f1f;
   text-align: center;
+  height: auto;
 }
 
 .projects h1 {
@@ -179,6 +193,8 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -203,6 +219,7 @@ html {
   min-height: 400px;
   text-align: center;
   background-color: white;
+  margin: 10px 0;
 }
 
 .projects .cards .projects-cards h3 {
@@ -230,17 +247,23 @@ html {
   font-size: 20px;
 }
 
-.projects #project-btn {
+.projects .project-btn {
+  margin: 50px;
+}
+
+.projects .project-btn a {
   padding: 20px;
   background-color: #537895;
   color: white;
   text-decoration: none;
   width: 150px;
   text-align: center;
+  -webkit-transition-duration: 267ms;
+          transition-duration: 267ms;
 }
 
-.projects #project-btn:hover {
-  background-color: #537895;
+.projects .project-btn a:hover {
+  background-color: #7899b3;
 }
 
 .footer {
@@ -254,7 +277,7 @@ html {
 }
 
 .footer ul {
-  padding: 80px 0;
+  margin: 80px 0;
 }
 
 .footer ul h3 {
