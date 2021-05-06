@@ -183,6 +183,23 @@ body {
   margin: 40px 0;
 }
 
+@media (max-width: 768px) {
+  .hero-1 .content h1 {
+    font-size: 30px;
+  }
+  .hero-1 .content p {
+    font-size: 15px;
+  }
+  .hero-1 .content a {
+    padding: 10px;
+    font-size: 12px;
+  }
+  .hero-1 img {
+    width: 200px;
+    margin: 20px 0;
+  }
+}
+
 .services {
   color: #1f1f1f;
 }
@@ -231,6 +248,18 @@ body {
 
 .services .cards .services-cards svg {
   width: 300px;
+}
+
+@media (max-width: 768px) {
+  .services h1 {
+    font-size: 30px;
+  }
+  .services .cards .services-cards h2 {
+    font-size: 22px;
+  }
+  .services .cards .services-cards svg {
+    width: 200px;
+  }
 }
 
 .projects {

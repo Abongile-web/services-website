@@ -153,6 +153,28 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .hero-1 {
+    .content {
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 15px;
+      }
+      a {
+        padding: 10px;
+        font-size: 12px;
+      }
+    }
+
+    img {
+      width: 200px;
+      margin: 20px 0;
+    }
+  }
+}
+
 //services section
 
 .services {
@@ -181,6 +203,24 @@ body {
       }
       svg {
         width: 300px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    h1 {
+      font-size: 30px;
+    }
+    .cards {
+      .services-cards {
+        h2 {
+          font-size: 22px;
+        }
+        svg {
+          width: 200px;
+        }
       }
     }
   }
