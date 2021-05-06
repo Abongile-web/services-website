@@ -42,6 +42,17 @@ body {
   position: sticky;
 }
 
+.navigation .menu {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: none;
+}
+
+.navigation .menu i {
+  color: white;
+}
+
 .navigation .logo img {
   width: 50px;
   border-radius: 50%;
@@ -73,6 +84,47 @@ body {
 .navigation ul li a:hover {
   color: #e3e3e3;
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .navigation .menu {
+    display: block;
+  }
+  .navigation .logo img {
+    width: 30px;
+  }
+  .navigation .show {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .navigation ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 99;
+    background-color: #133854;
+    height: 100vh;
+    width: 80vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: -webkit-transform 0.8s ease-in-out;
+    transition: -webkit-transform 0.8s ease-in-out;
+    transition: transform 0.8s ease-in-out;
+    transition: transform 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out;
+  }
+  .navigation ul li {
+    padding: 20px 0;
+  }
 }
 
 .hero-1 {
