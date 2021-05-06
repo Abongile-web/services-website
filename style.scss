@@ -6,6 +6,12 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .header {
@@ -54,6 +60,11 @@ html {
         }
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation {
   }
 }
 
@@ -141,7 +152,6 @@ html {
   margin-top: 40px;
   color: rgb(31, 31, 31);
   text-align: center;
-  height: auto;
 
   h1 {
     text-align: center;
@@ -201,6 +211,20 @@ html {
       &:hover {
         background-color: #7899b3;
       }
+    }
+  }
+}
+
+//clients section
+
+.clients {
+  text-align: center;
+  margin-top: 40px;
+  color: rgb(31, 31, 31);
+  .list {
+    margin: 40px;
+    i {
+      padding: 40px;
     }
   }
 }

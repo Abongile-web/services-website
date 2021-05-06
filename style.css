@@ -7,6 +7,12 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .header {
@@ -180,7 +186,6 @@ html {
   margin-top: 40px;
   color: #1f1f1f;
   text-align: center;
-  height: auto;
 }
 
 .projects h1 {
@@ -264,6 +269,20 @@ html {
 
 .projects .project-btn a:hover {
   background-color: #7899b3;
+}
+
+.clients {
+  text-align: center;
+  margin-top: 40px;
+  color: #1f1f1f;
+}
+
+.clients .list {
+  margin: 40px;
+}
+
+.clients .list i {
+  padding: 40px;
 }
 
 .footer {
