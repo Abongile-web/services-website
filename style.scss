@@ -296,22 +296,27 @@ body {
   }
 }
 
-//clients section
-
-.clients {
-  text-align: center;
-  margin-top: 40px;
-  color: rgb(31, 31, 31);
-  .list {
-    margin: 40px;
-    i {
-      padding: 40px;
+@media (max-width: 768px) {
+  .projects {
+    h1 {
+      font-size: 30px;
+    }
+    .cards {
+      .projects-cards {
+        width: 300px;
+        img {
+          width: 300px;
+        }
+      }
     }
   }
 }
 
+//footer section
+
 .footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   background-color: #133854;
   color: white;
@@ -329,5 +334,19 @@ body {
     width: 80px;
     height: 80px;
     border-radius: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+
+    ul {
+      margin: 10px;
+    }
+
+    img {
+      margin: 20px auto;
+    }
   }
 }

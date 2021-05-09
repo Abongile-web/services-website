@@ -352,24 +352,24 @@ body {
   background-color: #7899b3;
 }
 
-.clients {
-  text-align: center;
-  margin-top: 40px;
-  color: #1f1f1f;
-}
-
-.clients .list {
-  margin: 40px;
-}
-
-.clients .list i {
-  padding: 40px;
+@media (max-width: 768px) {
+  .projects h1 {
+    font-size: 30px;
+  }
+  .projects .cards .projects-cards {
+    width: 300px;
+  }
+  .projects .cards .projects-cards img {
+    width: 300px;
+  }
 }
 
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background-color: #133854;
@@ -393,5 +393,20 @@ body {
   width: 80px;
   height: 80px;
   border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer ul {
+    margin: 10px;
+  }
+  .footer img {
+    margin: 20px auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */
