@@ -46,6 +46,7 @@ body {
   position: absolute;
   top: 8px;
   right: 8px;
+  cursor: pointer;
   display: none;
 }
 
@@ -183,7 +184,7 @@ body {
   margin: 40px 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   .hero-1 .content h1 {
     font-size: 30px;
   }
@@ -250,7 +251,7 @@ body {
   width: 300px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   .services h1 {
     font-size: 30px;
   }
@@ -352,7 +353,7 @@ body {
   background-color: #7899b3;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   .projects h1 {
     font-size: 30px;
   }
@@ -388,6 +389,11 @@ body {
   list-style: none;
 }
 
+.footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
 .footer img {
   margin: 80px 0;
   width: 80px;
@@ -395,7 +401,7 @@ body {
   border-radius: 50%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   .footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

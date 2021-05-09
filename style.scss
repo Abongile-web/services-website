@@ -38,6 +38,7 @@ body {
     position: absolute;
     top: 8px;
     right: 8px;
+    cursor: pointer;
     display: none;
     i {
       color: white;
@@ -153,7 +154,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   .hero-1 {
     .content {
       h1 {
@@ -208,7 +209,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   .services {
     h1 {
       font-size: 30px;
@@ -296,7 +297,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   .projects {
     h1 {
       font-size: 30px;
@@ -327,6 +328,10 @@ body {
     }
     li {
       list-style: none;
+      a {
+        color: white;
+        text-decoration: none;
+      }
     }
   }
   img {
@@ -337,7 +342,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   .footer {
     flex-direction: column;
 
