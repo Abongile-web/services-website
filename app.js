@@ -11,3 +11,6 @@ document.querySelector('.menu').addEventListener('click', () => {
         icon.className = 'fa fa-bars';
     }
 })
+
+//initialize automate on scroll
+AOS.init();
